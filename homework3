@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON3</title>
+<style>
+    div {
+        display:block;
+        margin: 120px;    
+    }
+    .SheCodes {
+        text-align: center;
+         color: #272044;
+         font-weight: 900;
+         font-size: 34px;
+         line-height: 48px;
+         margin: 0;
+         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+      }
+    h2 {
+        text-align: center;
+         color: #8064e9;
+         padding: 0 0 24px;
+         font-weight: 900;
+         font-size: 34px;
+         line-height: 48px;
+         margin: 0;
+          font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+    }
+
+    p {
+        text-align: center;
+        font-size: 25px;
+        font-family: PT Mono, monospace;
+    }
+
+    button {
+         position:relative;
+         margin: 0 auto;
+         display: block;
+         cursor: pointer;
+         outline: none;
+         border: 0;
+         text-decoration: none;
+         font-size: inherit;
+         font-family: inherit;
+}
+button.btn {
+  font-weight: 600;
+  color: #272044;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transition: transform 0.15s;
+  transform-style: preserve-3d;
+}
+button.btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #8064E9;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button.btn:hover {
+  background: #fccdcd;
+  transform: translate(0, 0.25em);
+}
+button.btn:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+button.btn:active {
+  background: #ffe8e8;
+  transform: translate(0em, 0.75em);
+}
+button.btn:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+</style>
+</head>
+<body>
+    <div>
+     <h1 class="SheCodes">
+           👩‍💻SheCodes is a Coding Workshop for Women
+     </h1> 
+     <h2>
+         Access a new career in Technology
+     </h2>
+        <p>
+         SheCodes teaches coding, design and management skills to women
+          <br>
+            <strong>
+                Limited number of spots available!
+            </strong>
+        </p>
+</div>
+   <button class="btn">
+       Join Now
+   </button>
+</body>
+</html>
